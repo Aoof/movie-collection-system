@@ -1,0 +1,50 @@
+body {
+    font-family: system-ui, sans-serif;
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    color: #1f2933;
+}
+
+header h1 {
+    margin-bottom: 1.5rem;
+}
+
+#search-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#search-input {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+#results {
+    list-style: none;
+    padding: 0;
+}
+
+#results li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    border-bottom: 1px solid #e4e7eb;
+}
+
+#results li.unavailable span {
+    color: #9aa5b1;
+}
+
+#results li.empty {
+    color: #616e7c;
+}
